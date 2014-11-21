@@ -1,6 +1,14 @@
 Alert, Alert!
 =============
 
+Nov. 21, 2014
+-------------
+
+Minor version bump to 1.0.2
+Adjusted styles so that invisible portions of the notification container won't cover up UI elements below.
+Changed dropshadows from gray color to black with alpha channel.
+
+
 Nov. 17, 2014
 -------------
 

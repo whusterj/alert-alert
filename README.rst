@@ -1,7 +1,7 @@
 Alert! Alert!
 =============
 
-Current Vesion: 1.0.1
+Current Vesion: 1.0.2
 
 Alert! Alert! is a minimalist JavaScript growl-style notification library designed to run in modern browsers without external dependencies.
 
