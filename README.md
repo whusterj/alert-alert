@@ -16,7 +16,7 @@ npm install alert-alert
 
 ```javascript
 var type    = 'info',
-    message = '<p>Something you outta know!</p>',
+    message = '<p>Something you oughta know!</p>',
     config  = { timeout: 7000 };
 
 Alert.alert(type, message, config);
