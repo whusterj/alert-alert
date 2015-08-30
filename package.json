@@ -1,0 +1,19 @@
+{
+  "name": "alert-alert-demo",
+  "version": "1.0.0",
+  "description": "Demo for the alert-alert node package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whusterj/alert-alert.git"
+  },
+  "author": "William Huster <whusterj@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whusterj/alert-alert/issues"
+  },
+  "homepage": "https://github.com/whusterj/alert-alert#readme"
+}
