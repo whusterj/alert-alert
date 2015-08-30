@@ -1,8 +1,9 @@
 {
   "name": "alert-alert",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A minimalist JavaScript notification component designed to run in modern browsers without external framework dependencies.",
   "main": "dist/js/alert-alert.js",
+  "style": "dist/css/alert-alert.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist && mkdir dist && mkdir \"dist/js\" && mkdir \"dist/css\"",

@@ -45,8 +45,8 @@ function processCSS (inFile, outFile) {
 
     var cssProcesses = [
         require('postcss-nested'),
-        require('postcss-simple-vars'),
         require('autoprefixer-core')({ browsers: ['last 2 versions'] }),
+        require('postcss-simple-vars'),
     ]
 
     var processedCSS = fs.readFileAsync(inFile)

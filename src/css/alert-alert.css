@@ -8,11 +8,11 @@ $aa-darkGray   :  rgb( 60,  60,  60);
 
 $aa-dropShadow :  rgba(0, 0, 0, 0.6);
 
-$aa-zIndex : 1001;
+$aa-zIndex     :  1001;
 
 /* styles */
 
-#aa-notificationContainer {
+#aa-container {
   position: fixed;
   top: 12px;
   right: 12px;
@@ -20,6 +20,7 @@ $aa-zIndex : 1001;
 }
 
 .aa-notification {
+
   width: 300px;
   min-height: 40px;
   padding: 12px;
@@ -51,4 +52,5 @@ $aa-zIndex : 1001;
   &.error {
     border-left-color: @aa-red;
   }
+
 }
