@@ -1,0 +1,45 @@
+/* variables */
+
+/* styles */
+
+.alert-alert #aa-notificationContainer {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 1001;
+}
+
+.alert-alert .aa-notification {
+  width: 300px;
+  min-height: 40px;
+  padding: 12px;
+  margin-bottom: 12px;
+  color: white;
+  background-color: rgb(100, 100, 100);
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  transition: 0.3s linear all;
+}
+
+.alert-alert .aa-notification:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.alert-alert .aa-notification.info {
+  border-left-color: @aa-blue;
+}
+
+.alert-alert .aa-notification.success {
+  border-left-color: @aa-green;
+}
+
+.alert-alert .aa-notification.warning {
+  border-left-color: @aa-yellow;
+}
+
+.alert-alert .aa-notification.error {
+  border-left-color: @aa-red;
+}

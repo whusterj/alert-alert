@@ -2,9 +2,13 @@
   "name": "alert-alert-demo",
   "version": "1.0.0",
   "description": "Demo for the alert-alert node package",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf demo && mkdir demo",
+    "copy": "cp src/index.html demo/",
+    "bundleCSS": "npm-css src/index.css > demo/index.css",
+    "build": "npm run clean && npm run copy && browserify src/index.js -o demo/index.js && npm run bundleCSS"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/whusterj/alert-alert/issues"
   },
-  "homepage": "https://github.com/whusterj/alert-alert#readme"
+  "homepage": "https://github.com/whusterj/alert-alert#readme",
+  "devDependencies": {
+    "alert-alert": "^1.0.6",
+    "browserify": "^11.0.1",
+    "npm-css": "^0.2.3"
+  }
 }
