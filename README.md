@@ -28,9 +28,9 @@ Alert.alert(type, message, config);
 npm test
 ```
 
-This package uses Browserify, tape, PhantomJS, and tape-run for headless browser testing. Tests require devDependencies to be installed, so the `npm test` command will run `npm install --dev` before running tests.
+This package uses Browserify, tape, PhantomJS, and tape-run for headless browser testing.
 
-On Windows, we need to find and copy `phantomjs.exe` to `C:\Users\[UserName]\AppData\Roaming\npm`, [because of this old issue](https://github.com/joyent/node/issues/2318). I found the solution on [this mocha-phantomjs issue](https://github.com/nathanboktae/mocha-phantomjs/issues/61).
+If attempting to run these tests on Windows, we first need to find and copy `phantomjs.exe` (nested in `node_modules`) to `C:\Users\[UserName]\AppData\Roaming\npm`, [because of this old issue](https://github.com/joyent/node/issues/2318). I found the solution on [this mocha-phantomjs issue](https://github.com/nathanboktae/mocha-phantomjs/issues/61).
 
 ## Build
 

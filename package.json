@@ -5,7 +5,7 @@
   "main": "dist/js/alert-alert.js",
   "style": "dist/css/alert-alert.css",
   "scripts": {
-    "test": "npm install --dev && browserify test/alert-alert.js | tape-run",
+    "test": "browserify test/alert-alert.js | tape-run",
     "clean": "rm -rf dist && mkdir dist && mkdir \"dist/js\" && mkdir \"dist/css\"",
     "lint": "jshint src/js/alert-alert.js",
     "build": "npm run lint && npm run clean && node build.js"
@@ -29,6 +29,7 @@
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "bluebird": "^2.9.34",
+    "browserify": "^11.0.1",
     "cssnano": "^2.6.1",
     "fs-extra": "^0.24.0",
     "jshint": "^2.8.0",
