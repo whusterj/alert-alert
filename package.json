@@ -1,6 +1,6 @@
 {
   "name": "alert-alert",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A minimalist JavaScript notification component designed to run in modern browsers without external framework dependencies.",
   "main": "dist/js/alert-alert.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "url": "https://github.com/whusterj/alert-alert/issues"
   },
   "homepage": "http://whusterj.github.io/alert-alert/",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer-core": "^5.2.1",
     "bluebird": "^2.9.34",
     "cssnano": "^2.6.1",
