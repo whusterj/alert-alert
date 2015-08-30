@@ -1,6 +1,8 @@
+[![npm version](https://badge.fury.io/js/alert-alert.svg)](http://badge.fury.io/js/alert-alert)
+[![Build Status](https://travis-ci.org/whusterj/alert-alert.svg?branch=master)](https://travis-ci.org/whusterj/alert-alert)
+
 # Alert! Alert!
 
-[![npm version](https://badge.fury.io/js/alert-alert.svg)](http://badge.fury.io/js/alert-alert)
 
 Alert! Alert! is a minimalist JavaScript growl-style notification library designed to run in modern browsers without external dependencies.
 
