@@ -42,6 +42,3 @@ function warnAlert () {
 function errorAlert () {
   newAlert('error', '<p>Woah! Oh noes! Something broke!</p>');
 }
-
-// Syntax highlighting for demo
-hljs.initHighlightingOnLoad();
