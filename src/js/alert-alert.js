@@ -3,7 +3,7 @@
  * designed to run in modern browsers without external dependencies.
  *
  * @author  William Huster  <whusterj@gmail.com>
- * @version 1.0.2
+ * @version 1.0.3
  *
  * Usage:
  *
@@ -19,66 +19,65 @@
  *                dismissing the notification.
  */
 
-var Alert = (function () {
-  
+'use strict';
+
+module.exports = (function () {
+
   var container,
       CONTAINER_ID  = 'aa-notificationContainer',
-      ALERT_CLASS   = 'aa-notification',
-      INFO_CLASS    = 'info',
-      SUCCESS_CLASS = 'success',
-      WARNING_CLASS = 'warning',
-      ERROR_CLASS   = 'error';
-  
+      ALERT_CLASS   = 'aa-notification';
+
   exports = {
-    alert: alert
+    alert: _alert
   };
-  
+
   return exports;
-  
-  /// functions ///
-  
-  function alert (type, message, config) {
+
+  /////////////////////////////////////////
+  // functions
+
+  function _alert (type, message, config) {
     if (typeof(config) === 'undefined') { config = {}; }
-    if (!container) { container = genNotificationContainer(); }
+    if (!container) { container = _genNotificationContainer(); }
     container.appendChild(
-      genAlertDiv(type, message, config.timeout)
+      _genAlertDiv(type, message, config.timeout)
     );
   }
-  
-  function genNotificationContainer () {
+
+  function _genNotificationContainer () {
     if (container) { return; }
     var containerDiv = document.createElement('div');
     containerDiv.id = CONTAINER_ID;
     document.body.appendChild(containerDiv);
     return containerDiv;
   }
-  
-  function genAlertDiv (type, message, timeout) {
+
+  function _genAlertDiv (type, message, timeout) {
     var alertDiv = document.createElement('div');
     alertDiv.className = ALERT_CLASS + ' ' + type;
     alertDiv.innerHTML = message;
-    
+
     //
-    alertDiv.addEventListener('click', alertClickHandler);
+    alertDiv.addEventListener('click', _alertClickHandler);
 
     //
     if (timeout) {
       alertDiv.timeout = setTimeout(
         function () {
-          removeAlert(alertDiv);
+          _removeAlert(alertDiv);
         }, timeout); 
     }
-    
+
     return alertDiv;
   }
-  
-  function removeAlert (alert) {
+
+  function _removeAlert (alert) {
     window.clearTimeout(alert.timeout);
     container.removeChild(alert);
   }
-  
-  function alertClickHandler (event) {
-    removeAlert(event.currentTarget);
+
+  function _alertClickHandler (event) {
+    _removeAlert(event.currentTarget);
   }
-  
+
 })();
