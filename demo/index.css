@@ -31,17 +31,17 @@
 }
 
 .aa-notification.info {
-  border-left-color: @aa-blue;
+  border-left-color: rgb(100, 100, 200);
 }
 
 .aa-notification.success {
-  border-left-color: @aa-green;
+  border-left-color: rgb(100, 180, 100);
 }
 
 .aa-notification.warning {
-  border-left-color: @aa-yellow;
+  border-left-color: rgb(230, 215, 100);
 }
 
 .aa-notification.error {
-  border-left-color: @aa-red;
+  border-left-color: rgb(230, 100, 100);
 }
