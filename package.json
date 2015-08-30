@@ -2,13 +2,16 @@
   "name": "alert-alert",
   "version": "1.0.9",
   "description": "A minimalist JavaScript notification component designed to run in modern browsers without external framework dependencies.",
-  "main": "dist/js/alert-alert.js",
-  "style": "dist/css/alert-alert.css",
+  "main": "dist/node/js/alert-alert.js",
+  "style": "dist/node/css/alert-alert.css",
   "scripts": {
     "test": "browserify test/alert-alert.js | tape-run",
-    "clean": "rm -rf dist && mkdir dist && mkdir \"dist/js\" && mkdir \"dist/css\"",
+    "make-dist-node": "mkdir \"dist/node/js\" && mkdir \"dist/node/css\"",
+    "make-dist-standalone": "mkdir \"dist/standalone/js\" && mkdir \"dist/standalone/css\"",
+    "make-dist": "mkdir dist && npm run make-dist-standalone && npm run make-dist-node",
+    "clean": "rm -rf dist/ && npm run make-dist",
     "lint": "jshint src/js/alert-alert.js",
-    "build": "npm run lint && npm run clean && node build.js"
+    "build": "npm run lint && npm run clean && node build/"
   },
   "repository": {
     "type": "git",
