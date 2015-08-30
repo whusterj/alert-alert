@@ -3,7 +3,7 @@
  * designed to run in modern browsers without external dependencies.
  *
  * @author  William Huster  <whusterj@gmail.com>
- * @version 1.0.5
+ * @version 1.0.6
  *
  * Usage:
  *
