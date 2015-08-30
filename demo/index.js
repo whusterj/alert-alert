@@ -88,8 +88,6 @@ module.exports = (function () {
 
 var Alert = require('alert-alert');
 
-console.log('Alert', Alert);
-
 var genAlertBtn     = document.getElementById('defaultAlertBtn'),
     infoAlertBtn    = document.getElementById('infoAlertBtn'),
     successAlertBtn = document.getElementById('successAlertBtn'),
