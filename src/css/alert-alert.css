@@ -38,19 +38,19 @@ $aa-zIndex     :  1001;
   }
   
   &.info {
-    border-left-color: @aa-blue;
+    border-left-color: $aa-blue;
   }
   
   &.success {
-    border-left-color: @aa-green;
+    border-left-color: $aa-green;
   }
   
   &.warning {
-    border-left-color: @aa-yellow;
+    border-left-color: $aa-yellow;
   }
   
   &.error {
-    border-left-color: @aa-red;
+    border-left-color: $aa-red;
   }
 
 }

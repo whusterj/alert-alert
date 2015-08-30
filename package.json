@@ -1,6 +1,6 @@
 {
   "name": "alert-alert",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A minimalist JavaScript notification component designed to run in modern browsers without external framework dependencies.",
   "main": "dist/js/alert-alert.js",
   "style": "dist/css/alert-alert.css",
