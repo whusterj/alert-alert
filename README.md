@@ -4,7 +4,7 @@
 
 Alert! Alert! is a minimalist JavaScript growl-style notification library designed to run in modern browsers without external dependencies.
 
-### [Demo](http://codepen.io/whusterj/full/qEWMwG/)
+### [Demo](http://whusterj.github.io/alert-alert/demo/)
 
 ## Install in Your Project
 
