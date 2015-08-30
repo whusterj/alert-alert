@@ -22,6 +22,13 @@ var type    = 'info',
 Alert.alert(type, message, config);
 ```
 
+## Test
+
+Uses PhantomJS and tape-run for headless browser testing.
+
+
+On Windows, we need to find and copy `phantomjs.exe` to `C:\Users\[UserName]\AppData\Roaming\npm`, [because of this old issue](https://github.com/joyent/node/issues/2318). I found the solution on [this mocha-phantomjs issue](https://github.com/nathanboktae/mocha-phantomjs/issues/61)
+
 ## Build
 
 Clone this repo, then:
@@ -30,3 +37,4 @@ Clone this repo, then:
 npm install
 npm run build
 ```
+
