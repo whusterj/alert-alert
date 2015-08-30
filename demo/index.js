@@ -4,7 +4,7 @@
  * designed to run in modern browsers without external dependencies.
  *
  * @author  William Huster  <whusterj@gmail.com>
- * @version 1.0.6
+ * @version 1.0.7
  *
  * Usage:
  *
@@ -25,7 +25,7 @@
 module.exports = (function () {
 
   var container,
-      CONTAINER_ID  = 'aa-notificationContainer',
+      CONTAINER_ID  = 'aa-container',
       ALERT_CLASS   = 'aa-notification';
 
   exports = {
