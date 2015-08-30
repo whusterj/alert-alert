@@ -20,9 +20,9 @@ var message = 'Something important!';
 Alert.alert(messageType, message[, options]);
 
 // This will cause a pop-up notification with a blue stripe to appear
-// that says "Something Important."
+// that says "Something Important!"
 ```
 
-I highly recommend using browserify to build your application, which will bundle.
+I highly recommend using browserify to build your application, which will bundle the Alert! Alert! code with your app code, as seen in `src/index.js`.
 
-Here, I also demonstrate using [postcss-import](https://github.com/postcss/postcss-import) to include the Alert! Alert! styles in a straightforward way in your app's stylesheets. Take a look at `src/index.css` to see how the import is done and `build.js` to see how that stylesheet is processed.
+I am also demonstrating here how to use [postcss-import](https://github.com/postcss/postcss-import) to include the Alert! Alert! styles in a straightforward way in your app's stylesheets. Take a look at `src/index.css` to see how the import is done and `build.js` to see how that stylesheet is processed.
