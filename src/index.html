@@ -6,15 +6,42 @@
 </head>
 <body>
 
-    <h1>Alert! Alert! Demo</h1>  
+  <div class="container">
+    
+    <h1>Alert! Alert!</h1>
 
-    <button id="defaultAlertBtn">Default Alert</button>
-    <button id="infoAlertBtn">Info Alert</button>
-    <button id="successAlertBtn">Success Alert</button>
-    <button id="warningAlertBtn">Warning Alert</button>
-    <button id="errorAlertBtn">Error Alert</button>
+    <p>A simple JavaScript library for generating growl-style notifications.
+       No framework necessary.</p>
 
-    <script src="index.js"></script>
+    <div>
+        <button id="defaultAlertBtn">Default Alert</button>
+        <button id="infoAlertBtn">Info Alert</button>
+        <button id="successAlertBtn">Success Alert</button>
+        <button id="warningAlertBtn">Warning Alert</button>
+        <button id="errorAlertBtn">Error Alert</button>
+    </div>
+
+    <h2>Sample Usage</h2>
+
+    <p>Trigger new alerts with this simple API</p>
+
+    <pre><code class="javascript">var type = 'info',
+    message = '&lt;p&gt;Something you outta know!&lt;/p&gt;',
+    config = { timeout: 7000 };
+
+    Alert.alert(type,message, config);</code></pre>
+
+    <p>Alert options include: 'info', 'success', 'warning', and 'error', which are
+     color-coded to match their respective status.</p>
+
+  </div><!-- End container -->
+
+  <!-- Load our browserify-bundled application code -->
+  <script src="index.js"></script>
+
+  <!-- Load and init highlightJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

@@ -1,1 +1,35 @@
+/* We use postcss-import to inline these styles */
 @import "alert-alert/dist/css/alert-alert";
+
+/**
+ * Demo page styles
+ */
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(http://fonts.googleapis.com/css?family=Signika);
+
+body {
+  font-family: Signika, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.40;
+  background: rgb(234, 234, 242);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+button {
+  pointer: cursor;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
