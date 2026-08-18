@@ -3,6 +3,10 @@
 
 # Alert! Alert!
 
+> **Status: frozen.** The last release was in 2018, and this package is deprecated on npm. Nobody maintains it, and it will get no more updates.
+>
+> The library ships no runtime dependencies, so an install adds no vulnerable code to your project. The build tooling in `devDependencies` is from 2015 and does have known vulnerabilities, which matter only if you build the library yourself.
+
 
 Alert! Alert! is a minimalist JavaScript growl-style notification library designed to run in modern browsers without external dependencies.
 
